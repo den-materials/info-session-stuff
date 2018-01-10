@@ -1,0 +1,25 @@
+<head>
+	<style>
+		body {
+			background-color: blue;
+		}
+		h1 {
+			background-color: red;
+		}
+		.salutation {
+			font-size: 5em;
+		}
+	</style>
+	<script>
+		var phrase = "Goodbye, developers!";
+		function changeGoodbye() {
+			console.log("Changing Goodbye!");
+			document.getElementById("valediction").innerHTML = phrase;
+		}
+	</script>
+</head>
+<body>
+	<h1 class="salutation">Hello, GA!</h1>
+	<h1 id="valediction">Goodbye, friends!</h1>
+	<button onclick="changeGoodbye()">Change Goodbye</button>
+</body>
